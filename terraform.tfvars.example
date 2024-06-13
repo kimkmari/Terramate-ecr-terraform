@@ -1,0 +1,8 @@
+# ECR
+github_oidc_org_name = "cloud-devops-modules"
+ecr_repo_names = [
+    "amazoncorretto-17-alpine",
+    "amazoncorretto-11-alpine",
+    "amazoncorretto-8-alpine",
+    "amazonlinux-2"
+]

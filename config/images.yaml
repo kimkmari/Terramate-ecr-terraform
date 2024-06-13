@@ -1,0 +1,37 @@
+###########################
+# BASE IMAGES
+###########################
+base-images:
+  - registry: docker.io
+    image: amazoncorretto
+    tag: 17-alpine
+  - registry: docker.io
+    image: amazoncorretto
+    tag: 11-alpine
+  - registry: docker.io
+    image: amazoncorretto
+    tag: 8-alpine
+  - registry: docker.io
+    image: amazonlinux
+    tag: 2
+  # 2023.08 - Critical 4, High 19
+  # - registry: docker.io
+  #   image: node
+  #   tag: 12-alpine
+  - registry: docker.io
+    image: node
+    tag: 14-alpine
+  - registry: docker.io
+    image: node
+    tag: 16-alpine
+  - registry: docker.io
+    image: node
+    tag: 18-alpine
+
+###########################
+# ADD-ON IMAGES
+###########################
+add-on-images:
+  - registry: registry.k8s.io
+    image: metrics-server/metrics-server
+    tag: "v0.6.4"
